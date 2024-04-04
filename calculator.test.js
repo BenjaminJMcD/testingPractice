@@ -17,6 +17,3 @@ test('divides 12 / 4 to equal 3', () => {
 test('multiplies 2 * 5 to equal 10', () => {
     expect(calc.multiply(2,5)).toBe(10);
 });
-
-
-// NEED TO COMMIT AND PUSH CALCULATOR AND START CAESAR CIPHER BRANCH
