@@ -10,3 +10,6 @@ test('Maintains case when shifting', () => {
 });
 
 // test punctuation
+test('Keeps punctuation and all non-letter digits in place', () => {
+    expect(caesarCipher("How's it going?", 1)).toBe("Ipx't ju hpjoh?");
+});

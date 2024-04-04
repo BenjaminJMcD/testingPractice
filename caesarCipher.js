@@ -9,13 +9,16 @@ function caesarCipher(string, shift) {
 
         let digit = string.charAt(i);
 
-        if (digit == digit.toUpperCase()) {
+
+        if (!alphArr.includes(digit) && !alphArr.includes(digit.toLowerCase())) {
+            cipherArr.push(digit);
+        }
+        else if (digit == digit.toUpperCase()) {
             let index = alphArr.indexOf(digit.toLowerCase());
             let shiftIndex = index + shift;
             let wrappedIndex = getWrapIndex(shiftIndex);
             let cipherDigit = alphArr[wrappedIndex];
             cipherArr.push(cipherDigit.toUpperCase());
-
         }
         else {
             let index = alphArr.indexOf(digit);
@@ -41,8 +44,5 @@ function getWrapIndex(index) {
         return index
     }
 }
-
-
-// suggested to use smaller helper functions
 
 module.exports = caesarCipher;
