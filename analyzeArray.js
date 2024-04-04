@@ -2,6 +2,7 @@ function analyzeArray(arr) {
     return {
         average: getAverage(arr),
         min: getMin(arr),
+        max: getMax(arr),
     }
     
 }
@@ -16,6 +17,11 @@ function getAverage(arr) {
 function getMin(arr) {
     let min = Math.min.apply(null, arr);
     return min;
+}
+
+function getMax(arr) {
+    let max = Math.max.apply(null, arr);
+    return max;
 }
 
 module.exports = analyzeArray;
