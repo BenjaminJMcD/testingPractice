@@ -3,6 +3,7 @@ function analyzeArray(arr) {
         average: getAverage(arr),
         min: getMin(arr),
         max: getMax(arr),
+        length: arr.length
     }
     
 }

@@ -16,3 +16,6 @@ test('analyzeArray().max of [1,8,3,4,2,6] returns 8', () => {
 });
 
 // LENGTH
+test('analyzeArray().length of [1,8,3,4,2,6] returns 6', () => {
+    expect(analyzeArray([1,8,3,4,2,6]).length).toBe(6);
+});
